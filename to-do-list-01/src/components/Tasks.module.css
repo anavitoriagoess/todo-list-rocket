@@ -1,0 +1,154 @@
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form {
+    display: flex;
+    width: inherit;
+    height: 54px;
+    gap: 0.5rem;
+    margin-top: -32px;   
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    height: 3.375rem;
+
+    background: var(--black-500);
+    color: #fff;
+    font-size: 1rem;
+
+    border: 1px solid var(--black-700);
+    border-radius: 0.5rem;
+    outline: none;
+    box-shadow: none;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.input::placeholder {
+    color: var(--black-300);
+}
+
+.input:focus {
+    outline: 1px solid var(--purple-dark);
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+
+    height: 3.25rem;
+
+    background: var(--blue-dark);
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    color: var(--gray-100);
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 700;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.button:hover {
+    background: var(--blue);
+}
+
+@media screen and (max-width: 375px) {
+    .form {
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+}
+
+.headerTasks {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+.created, .done {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.created {
+    color: var(--blue);
+}
+
+.done {
+    color: var(--purple);
+}
+
+.tasksCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    gap: 10px;
+
+    width: auto;
+    height: 19px;
+
+    background: var(--gray-400);
+    border-radius: 999px;
+    color: var(--gray-200);
+}
+
+.card {
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    height: 244px;
+}
+
+.emptyCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 244px;
+    color: var(--gray-300);
+}
+
+.messageEmpty {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1rem;
+
+    font-size: 16px;
+    line-height: 140%;
+
+    text-align: center;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
